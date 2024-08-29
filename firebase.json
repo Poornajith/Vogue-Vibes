@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "build",
+    "site": "landing-web-fce38-6f50c",
     "ignore": [
       "firebase.json",
       "**/.*",
