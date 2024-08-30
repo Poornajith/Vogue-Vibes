@@ -1,18 +1,25 @@
 .slider-div-1{
-    background-image: url("./assets/images/business1_c.png");
+    background-image: url("./assets/slider/1.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 .slider-div-2{
-    background-image: url("./assets/images/business2_c.png");
+    background-image: url("./assets/slider/2.jpg");
+    background-size: cover;
 }
 .slider-div-3{
-    background-image: url("./assets/images/business3_c.png");
+    background-image: url("./assets/slider/6.jpg");
+    background-size: cover;
 }
 .slider-div-4{
-    background-image: url("./assets/images/business4_c.png");
+    background-image: url("./assets/slider/4.jpg");
+    background-size: cover;
 }
 .product-main-img{
     height: 50vh;
     background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 @media screen and (min-width: 700px) {
     .slider{
@@ -22,4 +29,13 @@
     .slider-div{
         height: 60vh;
     }
+}
+.slider-txt{
+    /* From https://css.glass */
+    background: rgba(252, 0, 109, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    border: 1px solid rgba(252, 0, 109, 0.49);
 }
