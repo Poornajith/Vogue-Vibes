@@ -1,13 +1,11 @@
-import {Button, Container, Nav, Navbar} from "react-bootstrap";
+import {Container, Nav, Navbar} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
-import logo from '../assets/logo.jpg'
+import logo from '../assets/Logo/logo100.png'
 import ColorTheme from "./ColorTheme";
-import LanguageSelect from "./LanguageSelect";
-import { getLabelText } from './MultipleLanguageSheets'
 import HandleNavigation from "./HandleNavigation";
+import '../App.css'
 
 export default function NavBar() {
-    let templatetype = 'navbar'
     const navigate = useNavigate()
     return (
         <div>
@@ -19,17 +17,13 @@ export default function NavBar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link onClick={() => HandleNavigation(navigate,`/`)}>{getLabelText('Home', templatetype)}</Nav.Link>
-                            <Nav.Link onClick={() => HandleNavigation(navigate,`/products`)}>{getLabelText('Products', templatetype)}</Nav.Link>
-                            <Nav.Link onClick={() => HandleNavigation(navigate,`/projects`)}>{getLabelText('Projects', templatetype)}</Nav.Link>
-                            <Nav.Link onClick={() => HandleNavigation(navigate,`/ongoingprojects`)}>{getLabelText('Ongoing Projects', templatetype)}</Nav.Link>
-                            <Nav.Link onClick={() => HandleNavigation(navigate,`/aboutus`)}>{getLabelText('About Us', templatetype)}</Nav.Link>
-                            <Nav.Link onClick={() => HandleNavigation(navigate,`/contactus`)}>{getLabelText('Contact Us', templatetype)}</Nav.Link>
+                            <Nav.Link className={'text-pink'} onClick={() => HandleNavigation(navigate,`/`)}>Home</Nav.Link>
+                            <Nav.Link className={'text-pink'} onClick={() => HandleNavigation(navigate,`/hair-makeup`)}>Hair & Make-up</Nav.Link>
+                            <Nav.Link className={'text-pink'} onClick={() => HandleNavigation(navigate,`/gallery`)}>Gallery</Nav.Link>
+                            <Nav.Link className={'text-pink'} onClick={() => HandleNavigation(navigate,`/dressing`)}>Bridal Dressing</Nav.Link>
+                            <Nav.Link className={'text-pink'} onClick={() => HandleNavigation(navigate,`/contactus`)}>Contact Us</Nav.Link>
                         </Nav>
-                        <Button className={'me-2 d-none'} onClick={() => HandleNavigation(navigate,`/login`)}>login</Button>
                         <ColorTheme></ColorTheme>
-                        <LanguageSelect></LanguageSelect>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

@@ -2,6 +2,7 @@ import {Dropdown} from "react-bootstrap";
 import sun from "../assets/sun.svg";
 import moon from "../assets/moon.svg";
 import {useState} from "react";
+import '../App.css'
 
 export default function ColorTheme() {
     const [isDark , setIsDark] = useState(true)
@@ -21,7 +22,7 @@ export default function ColorTheme() {
     return (
         <div className="theme me-2">
             <Dropdown>
-                <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                <Dropdown.Toggle className={'btn-pink'} id="dropdown-basic">
                     {isDark && (
                         <img src={sun} alt="light"/>
                     )}

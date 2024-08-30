@@ -4,3 +4,18 @@
 .logo{
     height: 40px;
 }
+.btn-pink{
+    background-color: #fa6dac !important;
+    border: #fd2684 !important;
+}
+.btn-pink:hover{
+    background-color: #f64e98 !important;
+    border: #fc006d !important;
+}
+.text-pink{
+    color:hotpink !important;
+    font-weight: bold !important;
+}
+.text-pink:hover{
+    color: #fd9ccf !important;
+}

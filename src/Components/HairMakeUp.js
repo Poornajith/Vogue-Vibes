@@ -1,16 +1,14 @@
 import NavBar from "./NavBar";
-import {Container } from "react-bootstrap";
 import Slider from "./Slider";
 import Footer from "./Footer";
-
-export default function Home() {
+export default function HairMakeUp() {
     return (
         <div>
             <NavBar></NavBar>
             <Slider></Slider>
-            <Container>
-                <h2 className={'mt-3'}>Home Page</h2>
-            </Container>
+            <div className={'m-5'}>
+                <h1>Hair And Make-Up</h1>
+            </div>
             <Footer></Footer>
         </div>
     )

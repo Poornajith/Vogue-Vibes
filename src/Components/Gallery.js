@@ -1,15 +1,12 @@
 import NavBar from "./NavBar";
-import {Container } from "react-bootstrap";
-import Slider from "./Slider";
+import {Container} from "react-bootstrap";
 import Footer from "./Footer";
-
-export default function Home() {
-    return (
+export default function Gallery() {
+    return(
         <div>
             <NavBar></NavBar>
-            <Slider></Slider>
             <Container>
-                <h2 className={'mt-3'}>Home Page</h2>
+                <h1>Gallery</h1>
             </Container>
             <Footer></Footer>
         </div>
