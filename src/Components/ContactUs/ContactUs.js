@@ -9,7 +9,7 @@ export default function ContactUs() {
         <div>
             <NavBar></NavBar>
             <Slider></Slider>
-            <div className="slider m-5 ps-5">
+            <div className="m-5 ps-5">
                 <Container className={'m-5'}>
                     <h4>Welcome dear !</h4>
                     <h1>How can we serve you? </h1>
@@ -103,8 +103,8 @@ export default function ContactUs() {
                         </Col>
                     </Row>
                 </Container>
-                <Footer></Footer>
             </div>
+            <Footer></Footer>
         </div>
     )
 }

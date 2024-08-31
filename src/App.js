@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./Components/Home";
-import Gallery from "./Components/Gallery";
+import Gallery from "./Components/Gallery/Gallery";
 import Dressing from "./Components/Dressing/Dressing";
 import HairMakeUp from "./Components/HairMakeUp";
 import ContactUs from "./Components/ContactUs/ContactUs";

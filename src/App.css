@@ -19,3 +19,16 @@
 .text-pink:hover{
     color: #fd9ccf !important;
 }
+.text-white{
+    color: #ffe0eb !important;
+    font-weight: bold !important;
+    cursor: pointer;
+}
+.text-white:hover{
+    color: #ffffff !important;
+}
+.navbar-bg{
+    background: rgb(250,109,172);
+    /*background: radial-gradient(circle, rgba(250,109,172,1) 0%, rgba(253,156,207,1) 35%, rgba(252,0,109,1) 100%);*/
+    background: linear-gradient(90deg, rgba(252,0,109,1) 0%, rgba(253,156,207,1) 71%, rgba(250,109,172,1) 100%);
+}
